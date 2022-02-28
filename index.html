@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Canvas Tutorial </title>
+		<script>
+			function f1() {
+				var canvas = document.getElementById("myCanvas");
+				context = canvas.getContext("2d");
+				context.fillStyle = "rgb(0, 0, 255)";
+				context.fillRect(10, 20, 200, 100);
+				context.strokeStyle = "red";
+				context.strokeRect(10, 20, 200, 100);
+			}
+		</script>
+	</head>
+
+	<body onload="f1();">
+
+		<canvas id="myCanvas"> This is a canvas. </canvas>
+	</body>
+
+</html>
