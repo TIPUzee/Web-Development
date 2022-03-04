@@ -11,3 +11,21 @@
 <map> <area>
 <figure>
 <figcaption>
+<span>
+
+Task
+<br>
+<hr>
+<abbr>
+<addres>
+<b>
+<blockcode></blockcode>
+<code></code>
+<del></del>
+<i></i>
+<ins></ins>
+<kbd></kbd>
+<pre></pre>
+<q></q>
+<sub></sub>
+<super></super>
