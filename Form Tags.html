@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Form Tags</title>
+
+    <style>
+        .req {
+            color: red;
+        }
+    </style>
+
+    <script>
+    </script>
+
+</head>
+
+<body>
+    <!--Form-->
+    <form action="/action_page.php" method="post" autocomplete name="testing">
+
+        <!--fieldset-->
+        <fieldset>
+
+            <!--Personals-->
+            <fieldset>
+                <legend>Personals</legend>
+                <!--Name-->
+                <div class="nameField">
+                    <label title="Only alphabets and whitespaces">First Name <font class="req">*</font> <br />
+                        <input type="text" name="firstName" placeholder="John" autofocus maxlength="20" minlength="3"
+                            required pattern="^[a-zA-Z ]*$" title="Only Alphabets and whitespaces">
+                    </label> <br />
+
+                    <label>Last Name <font class="req">*</font> <br />
+                        <input type="text" name="lastName" placeholder="Carter" maxlength="20" minlength="1" required
+                            pattern="^[a-zA-Z ]*$" title="Only Alphabets and whitespaces">
+                    </label>
+                </div>
+
+                <hr>
+                <!--password & email-->
+                <div class="Email">
+                    <label>User name <font class="req">*</font> <br>
+                        <input type="email" name="email" placeholder="example@email.com" required>
+                    </label> <br>
+
+                    <label>Password <font class="req">*</font> <br>
+                        <input type="password" name="password" maxlength="30" minlength="8">
+                    </label>
+                </div>
+
+                <hr>
+                <!--number-->
+                <div class="ageField">
+                    <label>
+                        Your Age<font class="req">*</font>:
+                        <input type="number" name="Age" min="18" max="24" required>
+                    </label>
+                </div>
+
+                <hr>
+                <!--date-->
+                <div class="dateField">
+                    <label>
+                        Your Birthday:
+                        <input type="date" name="bDay">
+                    </label>
+                </div>
+
+                <hr>
+                <!--select-->
+                <div class="countryField">
+                    <label>
+                        Choose your Country:
+                        <select name="Country">
+                            <optgroup label="South Asia">
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="India">India</option>
+                            </optgroup>
+                            <optgroup label="Others">
+                                <option value="Indonasia">Indonasia</option>
+                                <option value="Malasia" disabled>Malasia</option>
+                                <option value="Soudia">Soudia</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </div>
+
+                <hr>
+                <!--month-->
+                <div class="monthField">
+                    <label>
+                        Graduation:
+                        <input type="month" name="Graduation">
+                    </label>
+                </div>
+
+                <hr>
+                <!--tel-->
+                <div class="telephoneField">
+                    <label>
+                        Telephone Number:
+                        <input type="tel" name="telephone" placeholder="+92 341 8407 300">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorites</legend>
+                <hr />
+                <!--Favorite Language-->
+                <div class="farLanguageField">Choose your favorite computer language:<br />
+                    <label>
+                        <input type="radio" name="favLanguage" value="HTML" checked />
+                        HTML
+                    </label> <br />
+
+                    <label>
+                        <input type="radio" name="favLanguage" value="JAVASCRIPT" />
+                        JavaScript
+                    </label> <br>
+
+                    <label>
+                        <input type="radio" name="favLanguage" value="CPP" />
+                        CPP
+                    </label>
+                </div>
+
+                <hr />
+                <!--Fimiliar Languages-->
+                <div class="fimiLanguageField">Choose your fimiliar languages<br />
+                    <label>
+                        <input type="checkbox" name="fimLanguages" value="HTML" />
+                        HTML
+                    </label> <br>
+
+                    <label>
+                        <input type="checkbox" name="fimLanguages" value="JAVASCRIPT" />
+                        JAVASCRIPT
+                    </label> <br>
+
+                    <label style="color: rgb(172, 172, 172)">
+                        <input type="checkbox" name="fimLanguages" value="PYTHON" disabled />
+                        PYTHON
+                    </label> <br>
+
+                    <label>
+                        <input type="checkbox" name="fimLanguages" value="CPP" />
+                        CPP
+                    </label> <br>
+
+                    <label>
+                        <input type="checkbox" name="fimLanguages" value="CSS" />
+                        CSS
+                    </label>
+                </div>
+
+                <hr>
+                <!--week-->
+                <div class="favWeek">
+                    <label>
+                        Your Favorite Week:
+                        <input type="week" name="favWeek">
+                    </label>
+                </div>
+
+                <hr>
+                <!--datalist-->
+                <div class="favBrowser">
+                    Your Favorite Browser:
+                    <input list="B" value="Internet Explorer">
+                    <datalist id="B">
+                        <option value="Internet Explorer">By: Microsoft</option>
+                        <option value="Edge">By: Microsoft</option>
+                        <option value="Firefore">By: Mozilla</option>
+                        <option value="Chrome">By: Google</option>
+                        <option value="Opera">By: Opera Software AS</option>
+                        <option value="Safari">By: Safari Industries (India) Limited</option>
+                    </datalist>
+                </div>
+
+                <hr>
+                <!--color-input-->
+                <div class="colorField">
+                    <label>
+                        Favorite Color:
+                        <input type="color" id="mycolor" name="favColor" value="#2CE82E">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Others</legend>
+                <hr>
+                <!--datetime-local-->
+                <div class="partyDateTime">
+                    <label>
+                        Party Date & Time:
+                        <input type="datetime-local" name="partydatetime">
+                    </label>
+                </div>
+
+                <hr>
+                <!--hidden-->
+                <div class="hiddenField">
+                    <input type="hidden" name="anyHiddenInput" value="JARVIS">
+                </div>
+
+                <hr>
+                <!--file-->
+                <div class="fileField">
+                    <label>
+                        Update any File:
+                        <input type="file" name="file">
+                    </label>
+                </div>
+
+                <hr>
+                <!--range-->
+                <div class="valumeField">
+                    <label>
+                        Volume (0 - 50):
+                        <input type="range" name="val" min="0" max="50">
+                    </label>
+                </div>
+
+                <hr>
+                <!--search-->
+                <div class="googleSearch">
+                    <label>
+                        Google Search:
+                        <input type="search" name="googlesearch" placeholder="Search Item">
+                    </label>
+                </div>
+
+
+                <hr>
+                <!--time-->
+                <div class="meetingtime">
+                    <label>
+                        Meeting Time:
+                        <input type="time" name="meetingTime">
+                    </label>
+                </div>
+
+                <hr>
+                <!--url-->
+                <div class="websiteURL">
+                    <label>
+                        Your Website URL:
+                        <input type="url" name="websiteurl" placeholder="http://www.example.com/">
+                    </label>
+                </div>
+
+
+                <hr>
+                <!--textarea-->
+                <div class="messageField">
+                    <label>
+                        Any message: <br>
+                        <textarea name="message" cols="25" rows="5" spellcheck
+                            placeholder="Please Comment (at least 20 characters)" required minlength="20"></textarea>
+                    </label>
+                </div>
+
+                <hr>
+                <!--reset-->
+                <div class="resetField">
+                    <input type="reset" name="reset">
+                </div>
+
+                <hr>
+                <!--button-->
+                <div class="warningButtonField">
+                    <input type="button" name="warning" onclick="alert('YOU JUST CLICKED THE WARNING BUTTON!')"
+                        value="Click Me!">
+                </div>
+
+                <hr />
+                <!--bubmit-->
+                <div class="submitbox">
+                    <input type="submit">
+                </div>
+
+            </fieldset>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
