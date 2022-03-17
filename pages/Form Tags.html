@@ -50,7 +50,7 @@
                     </label> <br>
 
                     <label>Password <font class="req">*</font> <br>
-                        <input tabindex="3" type="password" name="password" maxlength="30" minlength="8">
+                        <input type="password" name="password" maxlength="30" minlength="8">
                     </label>
                 </div>
 
@@ -77,7 +77,7 @@
                 <div class="countryField">
                     <label>
                         Choose your Country:
-                        <select name="Country">
+                        <select name="Country" tabindex="3">
                             <optgroup label="South Asia">
                                 <option value="Pakistan">Pakistan</option>
                                 <option value="India">India</option>
@@ -290,10 +290,6 @@
             </fieldset>
         </fieldset>
     </form>
-
-    <script>
-        document.getElementsById('firstTab').focus();
-    </script>
 
 </body>
 

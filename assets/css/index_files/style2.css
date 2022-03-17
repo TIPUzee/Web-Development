@@ -1,0 +1,115 @@
+/* root */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	min-height: 300vh;
+}
+
+/* section 1 */
+
+body > .section1 {
+	background: linear-gradient(rgba(146, 143, 143, 0.486), rgba(109, 105, 105, 0.37)), url("../images/html - vscode background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	min-height: 450px;
+
+	display: grid;
+	color: antiquewhite;
+	font-family: sans-serif;
+	font-size: 19px;
+}
+
+body > .section1 > .content {
+	display: grid;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 10vw;
+	padding-bottom: 10vw;
+	justify-items: center;
+}
+
+
+body > .section1 > .content > h1, 
+body > .section1 > .content > .button, 
+body > .section1 > .content > p {
+	display: block;
+	text-align: center;
+}
+
+body > .section1 > .content > p {
+	font-weight: bold;
+}
+
+body > .section1 > .content > .button {
+	border: 1px solid rgba(255, 255, 255, 0.63);
+	background-color: rgb(71, 68, 68);
+	color: antiquewhite;
+	font-weight: 500;
+	font-size: 15px;
+
+	margin-top: 20px;
+	padding-bottom: 20px;
+	height: 1;
+	width: 1;
+
+	transition-duration: 0.3s;
+}
+
+body > .section1 > .content > .button:hover {
+	background-color: antiquewhite;
+	color: black;
+}
+
+body > .section1 > .content > .button:active {
+	transform: scale(1.05);
+	transition-duration: 0.03s;
+}
+
+
+
+
+
+/* section 2 */
+
+body > .section2 {
+	display: grid;
+	justify-items: center;
+	background-color: antiquewhite;
+	border: 1px solid red;
+}
+
+body > .section2 > .content {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border: 1px solid green;
+	display: grid;
+	grid-template-columns: minmax(320px, auto) minmax(320px, auto);
+}
+
+body > .section2 > .heading {
+	display: block;
+	margin-top: 40px;
+}
+
+body > .section2 > .content > .leftsection, 
+body > .section2 > .content > .rightsection {
+	max-width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-bottom: 32px;
+	justify-items: center;
+}
+
+
+img {
+	display: none;
+}
+

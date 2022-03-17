@@ -1,8 +1,205 @@
+/* root */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+	word-spacing: 4px;
+}
+
+h1 {
+	font-size: x-large;
+}
+
 body {
-    width: 99vw;
-    margin: 0px;
-    height: 3000px;
-    border: 4px solid red;
+	width: 100%;
+	min-height: 300vh;
+}
+
+/* section 1 */
+
+body > .section1 {
+	background: linear-gradient(rgba(87, 83, 83, 0.438), rgba(63, 62, 62, 0.37)), url("../images/html - vscode background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	min-height: 450px;
+	color: rgb(255, 255, 255);
+	font-family: sans-serif;
+
+	display: grid;
+}
+
+body > .section1 > .content {
+	display: grid;
+	justify-items: center;
+	line-height: 1.6;
+	
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 10vw;
+	padding-bottom: 10vw;
+}
+
+
+body > .section1 > .content > h1, 
+body > .section1 > .content button, 
+body > .section1 > .content > p {
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+body > .section1 > .content > p {
+	font-weight: bold;
+	word-spacing: 5px;
+	line-height: 35px;
+}
+
+body > .section1 > .content button {
+	border: 1px solid rgba(255, 255, 255, 0.63);
+	background-color: rgb(71, 68, 68);
+	color: antiquewhite;
+	height: 65px;
+	width: 140px;
+	font-weight: 500;
+	font-size: 15px;
+	margin-top: 20px;
+	transition-duration: 0.3s;
+
+	padding-bottom: 0;
+}
+
+body > .section1 > .content button:hover {
+	background-color: antiquewhite;
+	color: black;
+}
+
+body > .section1 > .content button:active {
+	transform: scale(1.05);
+	transition-duration: 0.03s;
+}
+
+body > .section1 h1 {
+	font-size: xx-large;
+}
+
+
+
+
+/* section 2 */
+
+body > .section2 {
+	display: grid;
+	justify-items: center;
+	background-color: antiquewhite;
+}
+
+body > .section2 > .heading {
+	display: block;
+	margin-top: 40px;
+	text-align: center;
+}
+
+body > .section2 > .content {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	column-gap: 7%;
+	
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+body > .section2 > .content > .leftsection, 
+body > .section2 > .content > .rightsection {
+	display: inline;
+	font-size: larger;
+	max-width: 350px;
+	text-align: center;
+	line-height: 1.4;
+
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-top: 40px;
+}
+
+
+
+
+/* Section 3 */
+
+
+body > .section3 {
+	display: grid;
+	padding: 50px;
+	margin: 0;
+	
+	justify-content: space-around;
+	text-align: center;
+
+	background-color: rgb(49, 51, 52);
+}
+
+.section3 > ul {
+	list-style: none;
+	width: 100%;
+
+	display: flex;
+	flex-flow: wrap;
+	column-gap: 25px;
+	row-gap: 30px;
+
+	justify-content: center;
+}
+
+li {
+	width: 350px;
+}
+
+li > .cards {
+	display: grid;
+	grid-auto-flow: row;
+	justify-content: center;
+	grid-template-rows: 3fr 1fr 2fr;
+
+	background-color: beige;
+}
+
+.cards > .imagesection {
+	display: block;
+	width: 100%;
+}
+
+#cards-img-1 {
+	background-image: url('../images/gir using phone.jpeg');
+	background-size: cover;
+}
+
+#cards-img-2 {
+	background-image: url('../images/laptop & tab chart.jpeg');
+	background-size: cover;
+}
+
+#cards-img-3 {
+	background-image: url('../images/html - vscode background.png');
+	background-size: cover;
+}
+
+.cards > p {
+	display: inline;
+	justify-self: center;
+	max-width: 85%;
+	padding-bottom: 52px;
+	line-height: 25px;
+}
+
+.cards > .heading > h1 {
+	position: relative;
+	top: 38px;
 }
 
 
@@ -10,48 +207,33 @@ body {
 
 
 
+/* Section 4 */
+
+body > .section4 {
+	background-color: rgb(214, 210, 210);
+	height: fit-content;
+	width: 100%;
+	text-align: center;
+}
 
 
+body > .section4 > .heading {
+	padding: 50px 40px 30px 40px;
+}
 
+body > .section4 > .content {
+	padding: 0 40px 50px 40px;
+	display: grid;
+	justify-content: center;
+}
 
+body > .section4 > .content > p {
+	max-width: 800px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
+body > .section1, 
+body > .section2,
+body > .section3 {
+	display: none;
+} */
