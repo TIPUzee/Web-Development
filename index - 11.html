@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Assignment #2</title>
+	</head>
+
+	<body>
+
+		<!-- form -->
+		<form action="">
+
+			<table class="maintable">
+
+				<!-- first row -->
+				<tr>
+					<td>
+						<label for="first_name">First Name</label>
+					</td>
+					<td>
+						<input type="text" id="first_name" name="first_name">
+					</td>
+				</tr>
+
+				<!-- second row -->
+				<tr>
+					<td>
+						<label for="last_name">Last Name</label>
+					</td>
+					<td>
+						<input type="text" id="last_name" name="last_name">
+					</td>
+				</tr>
+
+				<!-- third row -->
+				<tr>
+					<td>
+						<label for="address">Address</label>
+					</td>
+					<td>
+						<textarea id="address" name="address" cols="45" rows="5"
+							placeholder="17 Hristo Boteb Str floor 3, apt, 12"></textarea>
+					</td>
+				</tr>
+
+				<!-- fourth row -->
+				<tr>
+					<td>
+						<label for="city">City</label>
+					</td>
+					<td>
+						<input type="text" name="city" id="city" placeholder="Kaspichan">
+						<label for="state">State</label>
+						<input type="text" id="state" name="state">
+					</td>
+				</tr>
+
+				<!-- fifth row -->
+				<tr>
+					<td>
+						<label for="zip_code">Zip/Postal Code</label>
+					</td>
+					<td>
+						<input type="number" id="zip_code" name="zip_code">
+					</td>
+				</tr>
+
+				<!-- sixth row -->
+				<tr>
+					<td>
+						<label for="country">Country</label>
+					</td>
+					<td>
+						<input list="country" type="text">
+						<datalist id="country">
+							<option value="pakistan">Pakistan</option>
+							<option value="india">India</option>
+							<option value="america">Amercia</option>
+						</datalist>
+					</td>
+				</tr>
+
+				<!-- seventh row -->
+				<tr>
+					<td>
+						<label for="phone">Phone (country code, area code, number)</label>
+					</td>
+					<td>
+						(+
+						<input type="number" id="country" name="country_code">
+						)
+						<input type="number" name="area_code" id="area_code">
+						-
+						<input type="number" name="number" id="number">
+					</td>
+				</tr>
+
+				<!-- eighth row -->
+				<tr>
+					<td>
+						<label for="email">E-mail</label>
+					</td>
+					<td>
+						<input type="email" id="email" name="email">
+					</td>
+				</tr>
+
+				<!-- ninth row -->
+				<tr>
+					<td>
+						<label for="dob">Birth date</label>
+					</td>
+					<td>
+						<input type="date" name="dob" id="dob">
+					</td>
+				</tr>
+
+				<!-- tenth row -->
+				<tr>
+					<td>
+						<label for="gender">Gender</label>
+					</td>
+					<td>
+						<select name="gender" id="gender">
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</td>
+				</tr>
+
+				<!-- eleventh row -->
+				<tr>
+					<td>
+						<label for="starting_date">Starting date</label>
+					</td>
+					<td>
+						<input type="radio" name="starting_date" id="spring_2006">
+						<label for="spring_2006">Spring 2006</label>
+
+						<input type="radio" name="starting_date" id="summer_2006">
+						<label for="summer_2006">Summer 2006</label>
+					</td>
+				</tr>
+
+				<!-- twelveth row -->
+				<tr>
+					<td>
+						<label for="comments">Comments/Questions</label>
+					</td>
+					<td>
+						<textarea name="comments" id="comments" cols="30" rows="10" placeholder="Please send a message!">
+					</textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<div class="btns">
+							<button type="submit">Submit</button>
+							<button type="reset">Clear This Form</button>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+
+		</form>
+
+
+	</body>
+	
+	<style>
+		body {
+			box-sizing: border-box;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			padding: 40px 0;
+			margin: 0;
+		}
+
+		.maintable tr {
+			height: 35px;
+			transition-duration: 0.2s;
+			background-color: white;
+		}
+
+		.maintable td {
+			padding: 6px;
+			box-sizing: content-box;
+		}
+
+		.maintable td:nth-of-type(1) {
+			min-width: 250px;
+			outline: 1px solid black;
+			height: 100%;
+			text-align: right;
+			font-size: large;
+			font-weight: bold;
+		}
+
+		.maintable td:nth-of-type(2) {
+			min-width: 450px;
+			outline: 1px solid black;
+			height: 100%;
+		}
+
+		.maintable tr:last-child td {
+			background-color: aquamarine;
+		}
+
+		.maintable .btns {
+			display: grid;
+			justify-content: center;
+			grid-auto-flow: column;
+			column-gap: 10px;
+		}
+
+		button {
+			display: inline-block;
+			padding: 10px 26px;
+			background-color: white;
+			border: none;
+			border-radius: 5px;
+			transition-duration: 0.1s;
+			font-weight: bold;
+		}
+
+		.maintable button:hover {
+			transform: scaleY(1.02) scaleX(1.01);
+			box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+			background-color: rgb(47, 188, 235);
+			color: white;
+		}
+
+		.maintable tr:hover {
+			transform: scaleY(1.02) scaleX(1.01);
+			box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+		}
+
+		
+	</style>
+
+</html>

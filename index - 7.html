@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style - 7.css">
+  <title>Parallax Website</title>
+
+  
+  <script>
+    function show_msg() {
+      document.getElementById("close-layer").style.display = "block";
+      document.getElementById("dialog-box").style.display = "grid";
+    }
+
+    function hide_msg() {
+      document.getElementById("dialog-box").style.display = "none";
+      document.getElementById("close-layer").style.display = "none";
+    }
+  </script>
+  
+
+  
+</head>
+<body>
+
+  <button onclick="show_msg();" >Open Dialog</button>
+
+  <button id="close-layer"  onclick="hide_msg();"></button>
+
+  <div id="dialog-box">
+
+    <div class="header">
+      Message Title
+      <button id="close-btn" onclick="hide_msg();">X</button>
+    </div>
+    
+    <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, sint. Voluptatum similique impedit ex sed consequatur ipsum beatae quaerat expedita nulla dolorum iste, quasi quas officiis! Ullam iusto ab alias.
+    </div>
+
+    <div class="footer">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, nobis?
+    </div>
+
+  </div>
+  
+</body>
+</html>

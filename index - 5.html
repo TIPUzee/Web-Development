@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task-1</title>
+
+  <!-- style -->
+  <style>
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      column-gap: 20px;
+
+      background-color: rgb(63, 69, 73);
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    .gallery h1 {
+      font-family: sans-serif;
+      text-align: center;
+      letter-spacing: 2rem;
+      font-size: 70px;
+
+      width: 100%;
+      color: rgb(206, 206, 206);
+      margin: 0 auto 5px auto;
+    }
+
+    img {
+      max-height: 250px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-spacing: 8px;
+    }
+
+    th,
+    td {
+      padding: 10px 30px 10px 30px;
+    }
+
+    th {
+      background-color: bisque;
+    }
+
+    caption {
+      margin-bottom: 7px;
+      border: 1px solid black;
+      padding: 10px;
+      background-color: rgb(162, 160, 160);
+    }
+
+    table,
+    th,
+    td,
+    caption {
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    td {
+      background-color: beige;
+    }
+
+    table {
+      background-color: rgb(255, 238, 183);
+    }
+
+    .tablecontainer {
+      display: grid;
+      justify-content: center;
+      padding: 25px;
+    }
+
+    #nestedtable {
+      border: none;
+      background-color: transparent;
+    }
+
+    #nestedtable td {
+      background-color: rgb(255, 238, 183);
+    }
+  </style>
+
+</head>
+
+<!-- body -->
+<body>
+
+  <!-- Images -->
+  <div class="gallery">
+    <h1>Gallery</h1>
+    <img src="Images/2020-04-10_15-27-28-1024x695.png" alt="Img-1">
+    <img src="Images/Sakura-images.jpg" alt="Img-2">
+    <img src="Images/6109210790_dae0dc7a47_b.jpg" alt="Img-3">
+    <img src="Images/b6e952d1a90318432402e8f9beaa5b4e-576x1024.jpg" alt="Img-4">
+    <img src="Images/chevrolet_traverse_2008_images_1_b.jpg" alt="Img-5">
+    <img src="Images/Fruit-Platter-sq.jpg" alt="Img-6">
+    <img src="Images/good-morning-images-145-6.jpg" alt="Img-7">
+    <img src="Images/maldevta-3471686.jpg" alt="Img-8">
+    <img src="Images/R (1).jpg" alt="Img-9">
+  </div>
+
+  <!-- cellspan Table -->
+  <div class="tablecontainer">
+
+    <table>
+      <caption>Marks Sheet No. 2</caption>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Student Reg. No.</th>
+          <th>Subject Name</th>
+          <th>Obtained Marks</th>
+          <th>Total Marks</th>
+          <th>Average Marks</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th rowspan="3">Alan</th>
+          <td rowspan="3">Std-01</td>
+          <th>Maths</th>
+          <td>50.00</td>
+          <td rowspan="3">150.00</td>
+          <td rowspan="3">50.00</td>
+        </tr>
+        <tr>
+          <th>Physics</th>
+          <td>50.00</td>
+        </tr>
+        <tr>
+          <th>Chemistry</th>
+          <td>50.00</td>
+        </tr>
+
+        <tr>
+          <th rowspan="3">Scott</th>
+          <td rowspan="3">Std-01</td>
+          <th>Maths</th>
+          <td>50.00</td>
+          <td rowspan="3">150.00</td>
+          <td rowspan="3">50.00</td>
+        </tr>
+        <tr>
+        <th>Physics</th>
+          <td>50.00</td>
+        </tr>
+        <tr>
+          <th>Chemistry</th>
+          <td>50.00</td>
+        </tr>
+
+        <tr>
+          <th rowspan="3">John</th>
+          <td rowspan="3">Std-01</td>
+          <th>Maths</th>
+          <td>50.00</td>
+          <td rowspan="3">150.00</td>
+          <td rowspan="3">50.00</td>
+        </tr>
+        <tr>
+          <th>Physics</th>
+          <td>50.00</td>
+        </tr>
+        <tr>
+          <th>Chemistry</th>
+          <td>50.00</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- nested table -->
+  <div class="tablecontainer">
+    <table>
+      <caption>Nested Table Demo</caption>
+
+      <tbody>
+        <tr>
+          <td>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+          </td>
+          <td>
+            <p>This cell contains a table:</p>
+            <table id="nestedtable">
+              <tbody>
+                <tr>
+                  <td>A</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <td>C</td>
+                  <td>D</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>This cell contains a list:</p>
+            <ul>
+              <li>Apples</li>
+              <li>Bananas</li>
+              <li>Pineapples</li>
+            </ul>
+          </td>
+          <td>Hello <b style="font-size: xx-large;">: )</b></td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+</body>
+
+</html>

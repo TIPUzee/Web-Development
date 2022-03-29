@@ -1,0 +1,98 @@
+body {
+	height: 200vh;
+	margin: 0;
+}
+
+ul#topnav {
+	background-color: antiquewhite;
+	list-style-type: none;
+	margin: 0;
+	font-size: x-large;
+}
+
+ul#topnav a {
+	text-decoration: none;
+	display: block;
+}
+
+ul#topnav a:not(#current) {
+	color: black;
+}
+
+ul#topnav a#current {
+	color: white;
+	background-color: rgba(0, 157, 0, 0.653);
+}
+ul#topnav a:not(#current):hover {
+	background-color: rgb(128, 120, 120);
+	color: white;
+}
+
+
+ul#topnav {
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: fixed;
+	top: 0;
+	width: 20%;
+	height: 100vh;
+	padding: 0;
+	box-sizing: border-box;
+	padding-bottom: 10px;
+}
+
+ul#topnav a {
+	padding: 0.7em;
+}
+
+.pagecontent {
+	margin-left: 20%;
+	padding: 15px;
+	font-size: 110%;
+}
+
+@media screen and (max-width: 900px) {
+
+	ul#topnav {
+		overflow: hidden;
+		position: sticky;
+		top: 0;
+		height: auto;
+		width: 100%;
+		font-size: large;
+	}
+	
+	ul#topnav li {
+		float: left;
+	}
+	
+	ul#topnav a {
+		padding: 20px 20px;
+	}
+	
+	.pagecontent {
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	
+	ul#topnav {
+		display: block;
+		position: unset;
+		padding: 0;
+		width: unset;
+		height: auto;
+		font-size: large;
+	}
+	
+	ul#topnav li {
+		float: none;
+		text-align: center;
+	}
+
+	.pagecontent {
+		margin: 0;
+	}
+}

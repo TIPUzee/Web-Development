@@ -1,0 +1,35 @@
+.dropdown {
+	position: relative;
+	cursor: default;
+	display: inline-block;
+}
+
+.dropdown span {
+	text-decoration: 2px underline blue;
+}
+
+.dropdown-content {
+	padding: 4px 26px;
+	min-width: 160px;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0 7px 9px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-container {
+	padding: 20px;
+	position: absolute;
+	transition: all ease-in-out;
+	transition-duration: 0.35s;
+	top: calc(100% - 30px);
+	left: -20px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.dropdown:hover .dropdown-container {
+	display: block;
+	top: calc(100% - 20px) ;
+	visibility: visible;
+	opacity: 1;
+}
