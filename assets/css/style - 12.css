@@ -1,0 +1,55 @@
+body {
+	min-height: 150vh;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 2rem;
+}
+
+.gallery {
+	width: 100%;
+	height: auto;
+	background-color: rgb(82, 80, 78);
+	padding: 3rem 1rem;
+	box-sizing: border-box;
+	border-radius: 15px;
+	position: relative;
+}
+
+.img-card {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 13px;
+	background-color: lavenderblush;
+	margin: 7px 3px;
+	transition-duration: 0.4s;
+}
+
+.img-card img {
+	height: 200px;
+	border-radius: inherit;
+	transition-duration: 0.4s;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.img-card .Flex span {
+	text-align: center;
+	padding: 8px 8px 0;
+}
+
+.Flex {
+	display: flex;
+}
+
+.Flex span {
+	flex-grow: 1;
+	width: 0;
+}
+
+.img-card img:hover {
+	transform: scale(1.3);
+	top: 0;
+	left: 0;
+	z-index: 1;
+}

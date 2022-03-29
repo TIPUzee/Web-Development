@@ -1,0 +1,7 @@
+index - 6 : w3schools website
+index - 7 : Dialogue Box, full screen layer
+index - 8 : responsive navbar (always shown)
+index - 9 : message Card, yellow bar under title
+index - 10: smooth hover effect with shadow
+index - 11: UNI: 2nd Assignment
+index - 12: flex-grow implementation | Image gallery
