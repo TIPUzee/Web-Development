@@ -1,0 +1,357 @@
+<<<<<<< Updated upstream
+=======
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;0,800;1,400&family=Pacifico&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+:root {
+	--theme-red: 255;
+	--theme-green: 0;
+	--theme-blue: 0;
+	--cv-card-width: 900px;
+	--profile-img-size: 120px;
+	--profile-img-horizontal: 0;
+	--profile-img-vertical: 0;
+	--intro-padding-horizontal: 40px;
+	--intro-padding-vertical: 50px;
+	--intro-card-background-color: rgb(205, 226, 244);
+	--content-table-vertical-line-gap: 45px;
+	--content-table-date-font-size: 18px;
+	--content-main-table-cell-gap: 20px;
+	--skill-writer-skill-level: 100%;
+	--skill-web-developer-skill-level: 30%;
+	--skill-c-cpp-skill-level: 100%;
+	--skill-re-writer-skill-level: 100%;
+	--skill-editor-skill-level: 70%;
+	--skill-graphic-designer-skill-level: 60%;
+	--skill-english-skill-level: 60%;
+	--skill-urdu-skill-level: 100%;
+}
+
+/* main */
+.main {
+	background-color: antiquewhite;
+	width: 100%;
+	height: 250vh;
+	position: relative;
+}
+
+/* cv - main card: div */
+.cv-main-card {
+	position: absolute;
+	background-color: white;
+
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+	width: var(--cv-card-width);
+
+	min-width: 700px;
+}
+
+.cv-main-card:hover {
+	overflow: auto;
+	resize: horizontal;
+}
+
+/* intro card: ul */
+.intro-card {
+	background-color: var(--intro-card-background-color);
+
+	width: 100%;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+	box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.5);
+	padding: var(--intro-padding-vertical)
+		calc(var(--profile-img-size) + var(--intro-padding-horizontal))
+		var(--intro-padding-vertical) var(--intro-padding-horizontal);
+
+	position: relative;
+}
+
+.intro-card::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* profile image */
+.intro-card .profile {
+	width: var(--profile-img-size);
+	height: var(--profile-img-size);
+	position: absolute;
+	top: 50%;
+	right: var(--intro-padding-horizontal);
+	transform: translateY(-50%);
+}
+
+.intro-card .profile img {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	object-position: var(--profile-img-horizontal) var(--profile-img-vertical);
+	border-radius: 50%;
+}
+
+/* intro card title heading: h1 */
+.intro-card .title h1 {
+	color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 1);
+	font-size: 45px;
+}
+
+/* intro card skill title list */
+.intro-card .skill-title-list {
+	list-style: none;
+	margin-top: 10px;
+}
+
+.intro-card .skill-title-list li {
+	text-transform: capitalize;
+	white-space: nowrap;
+
+	display: inline;
+	font-size: 20px;
+}
+
+.intro-card .skill-title-list li:not(:last-of-type)::after {
+	content: ",";
+}
+
+/* intro card detail list icon: i */
+.intro-card ul.detail-list li i {
+	color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 1);
+}
+
+/* intro detail list */
+.intro-card .detail-list {
+	list-style: none;
+	margin-top: 10px;
+	font-family: "Alegreya Sans", sans-serif;
+	font-weight: 400;
+	font-size: large;
+}
+
+.intro-card .detail-list li {
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 7px;
+	white-space: nowrap;
+}
+
+.intro-card .detail-list li i {
+	margin-right: 5px;
+}
+
+/* content-card */
+.content-card {
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+	padding: 50px var(--intro-padding-horizontal);
+}
+
+/* content-main-table */
+.content-card .content-main-table {
+	width: 100%;
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+	border-collapse: collapse;
+}
+
+/* coneten card main table both cell */
+.main-table-cell {
+	vertical-align: top;
+	padding-top: 10px;
+}
+
+.section-saparator {
+	height: 20px;
+}
+
+/* content card main table left cell */
+.main-table-left-cell {
+	width: 25%;
+	padding-right: var(--content-table-vertical-line-gap);
+}
+
+.main-table-left-cell,
+.section-saparator {
+	border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* content card main table right cell */
+.main-table-right-cell {
+	padding-left: var(--content-table-vertical-line-gap);
+}
+
+/* content card main table title */
+.main-table-left-cell .title,
+.main-table-right-cell .sub-title {
+	color: rgba(var(--theme-red), var(--theme-green), var(--theme-blue), 1);
+	font-weight: 600;
+}
+
+/* content card main table date */
+.main-table-right-cell .title,
+.main-table-left-cell .date {
+	font-family: "Alegreya Sans", sans-serif;
+	font-weight: 600;
+	font-size: var(--content-table-date-font-size);
+}
+
+.main-table-right-cell .title {
+	position: relative;
+}
+
+.main-table-right-cell .title:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(
+		var(--theme-red),
+		var(--theme-green),
+		var(--theme-blue),
+		1
+	);
+
+	position: absolute;
+	left: calc(0px - var(--content-table-vertical-line-gap) - 5px);
+	top: 5px;
+}
+
+/* main table paregraph */
+.main-table-right-cell p {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.main-table-right-cell p,
+.main-table-right-cell .sub-title {
+	margin-top: 4px;
+}
+
+/* skill progress bar */
+.skill-container {
+	font-weight: 600;
+}
+
+.skill-container .skill {
+	display: inline-block;
+	width: calc(50% - 4px);
+	margin-bottom: 20px;
+}
+
+.skill-container .skill .progress {
+	background-color: rgba(
+		var(--theme-red),
+		var(--theme-green),
+		var(--theme-blue),
+		0.15
+	);
+	height: 8px;
+	width: calc(100% - 20px);
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.skill .progress-bar {
+	background-color: rgba(
+		var(--theme-red),
+		var(--theme-green),
+		var(--theme-blue),
+		1
+	);
+	height: inherit;
+	border-radius: inherit;
+}
+
+.skill.writer .progress-bar {
+	width: var(--skill-writer-skill-level);
+}
+
+.skill.web-developer .progress-bar {
+	width: var(--skill-web-developer-skill-level);
+}
+
+.skill.c-cpp .progress-bar {
+	width: var(--skill-c-cpp-skill-level);
+}
+
+.skill.re-writer .progress-bar {
+	width: var(--skill-re-writer-skill-level);
+}
+
+.skill.editor .progress-bar {
+	width: var(--skill-editor-skill-level);
+}
+
+.skill.graphic-designer .progress-bar {
+	width: var(--skill-graphic-designer-skill-level);
+}
+
+.skill.english .progress-bar {
+	width: var(--skill-english-skill-level);
+}
+
+.skill.urdu .progress-bar {
+	width: var(--skill-urdu-skill-level);
+}
+
+/* hobbies */
+.content-main-table .hobby-list {
+	list-style-type: none;
+}
+
+.content-main-table .hobby-list li {
+	display: inline-block;
+	width: calc(50% - 4px);
+	margin-bottom: 15px;
+}
+
+.content-main-table .hobby-list span:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(
+		var(--theme-red),
+		var(--theme-green),
+		var(--theme-blue),
+		1
+	);
+	margin-right: 15px;
+}
+
+@media screen {
+}
+
+/* animation */
+
+.cls-fade-in {
+	animation: fade-in 1s ease-out 0s 1 forwards normal;
+	position: relative;
+}
+
+/* animation keyframes */
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		top: 10px;
+	}
+
+	to {
+		opacity: 1;
+		top: 40px;
+	}
+}
+>>>>>>> Stashed changes

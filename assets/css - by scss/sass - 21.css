@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main-content {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  -ms-grid-rows: 100px max-content;
+      grid-template-rows: 100px -webkit-max-content;
+      grid-template-rows: 100px max-content;
+  margin-bottom: 300px;
+  -webkit-box-shadow: 0 5px 30px black;
+          box-shadow: 0 5px 30px black;
+}
+
+.main-content .header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+.main-content .side-nav {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / span 1 / span 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.main-content .content {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.main-content .ad-bar {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.main-content .footer {
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: aqua;
+  z-index: -1;
+  line-height: 300px;
+  text-align: center;
+}
+
+.main-content > * {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.main-content * {
+  text-align: center;
+}
+
+.header .nav-bar {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-min-content;
+  grid-auto-columns: min-content;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.header .nav-bar .nav-items {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    -ms-grid-rows: auto max-content;
+        grid-template-rows: auto -webkit-max-content;
+        grid-template-rows: auto max-content;
+  }
+  .header .nav-bar {
+    grid-auto-flow: row;
+  }
+  .header .nav-bar .nav-items {
+    width: 100vw;
+    background-color: gray;
+  }
+}

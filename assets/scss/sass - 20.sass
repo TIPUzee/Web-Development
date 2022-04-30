@@ -1,0 +1,59 @@
+// #318CE7
+// #ACE5EE
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+body
+	background-color: wheat
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+
+.card
+	background-color: white
+	margin-inline: auto
+	width: 800px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	border-radius: 10px
+
+	.caption
+		text-align: center
+		font-size: 22px
+		padding-block: 15px
+		background-color: #29547f
+		border-top-left-radius: inherit
+		border-top-right-radius: inherit
+
+	table
+		border-collapse: collapse
+		width: 100%
+		color: #29547f
+
+		tr:nth-child(odd)
+			background-color: #ace5ee72
+
+		tr:first-child
+			td:first-child
+				padding-left: 30px
+			td
+				padding-block: 10px
+
+		tr:not(:first-child)
+			td
+				padding-block: 20px
+
+		span.img
+			display: inline-block
+			width: 50px
+			height: 50px
+			background-color: #29547f
+			border-radius: 50%
+			margin-left: 30px
+
+		.comments
+			width: 300px
+

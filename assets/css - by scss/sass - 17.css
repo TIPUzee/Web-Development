@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.offer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offer-container .card {
+  width: 20rem;
+  border: none;
+  border-radius: 20px;
+  margin: 5rem 0.5rem;
+  position: relative;
+  padding-block: 8rem 2rem;
+}
+
+.offer-container .card .price-ball {
+  outline: 5px solid white;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: -5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  line-height: 10rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.offer-container .card .price-ball .duration-ball {
+  font-size: 0.7em;
+  line-height: 2em;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid;
+  height: 2.5em;
+  width: 2.5em;
+  position: absolute;
+  top: -0.3rem;
+  right: -0.3rem;
+}
+
+.offer-container .card .title {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.offer-container .card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.offer-container .card table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.offer-container .card table tr:nth-child(even) {
+  background-color: #e0dfdf;
+}
+
+.offer-container .card table td {
+  padding: 0.7rem 1rem;
+}
+
+.offer-container .card table td:last-child {
+  text-align: right;
+}
+
+.offer-container .card button {
+  display: block;
+  bottom: 0rem;
+  padding: 1rem 1.4rem;
+  border-radius: 7px;
+  border: none;
+  margin-inline: auto;
+  margin-top: 2rem;
+  color: white;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-out;
+  transition: -webkit-box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
+}
+
+.offer-container .card button:hover {
+  -webkit-box-shadow: inset 0 7px 10px black;
+          box-shadow: inset 0 7px 10px black;
+}
+
+.offer-container .card button:active {
+  -webkit-box-shadow: inset 0 7px 10px black;
+          box-shadow: inset 0 7px 10px black;
+}
+
+.offer-container .card-1 {
+  background-color: #3385e2;
+}
+
+.offer-container .card-1 .price-ball {
+  background-color: #3385e2;
+}
+
+.offer-container .card-1 .price-ball .duration-ball {
+  color: #3385e2;
+}
+
+.offer-container .card-1 button {
+  background-color: #00499c;
+}
+
+.offer-container .card-2 {
+  background-color: #33e242;
+}
+
+.offer-container .card-2 .price-ball {
+  background-color: #33e242;
+}
+
+.offer-container .card-2 .price-ball .duration-ball {
+  color: #33e242;
+}
+
+.offer-container .card-2 button {
+  background-color: #14741c;
+}
+
+.offer-container .card-3 {
+  background-color: #f8ee5e;
+}
+
+.offer-container .card-3 .price-ball {
+  background-color: #f8ee5e;
+}
+
+.offer-container .card-3 .price-ball .duration-ball {
+  color: #f8ee5e;
+}
+
+.offer-container .card-3 button {
+  background-color: #888014;
+}
+
+.offer-container .card-4 {
+  background-color: #d333e2;
+}
+
+.offer-container .card-4 .price-ball {
+  background-color: #d333e2;
+}
+
+.offer-container .card-4 .price-ball .duration-ball {
+  color: #d333e2;
+}
+
+.offer-container .card-4 button {
+  background-color: #8f1f99;
+}

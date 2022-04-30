@@ -1,7 +1,16 @@
 index - 6 : w3schools website
 index - 7 : Dialogue Box, full screen layer
 index - 8 : responsive navbar (always shown)
-index - 9 : message Card, yellow bar under title
+index - 9 : message Card, yellow bar under titleV
 index - 10: smooth hover effect with shadow
 index - 11: UNI: 2nd Assignment
 index - 12: flex-grow implementation | Image gallery
+index - 13: CV Template
+index - 14: Glass box
+index - 15: tooltip
+index - 17: Uni: Assignment: Offers Pricing Cards
+index - 18: Uni: Assignment: Users Info Table
+index - 19: students ---
+index - 20: Uni: Assignment: Users Info Table 2
+index - 21: layout using grid - 1
+

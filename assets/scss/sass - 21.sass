@@ -1,0 +1,78 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	overflow-x: hidden
+
+.main-content
+	background-color: white
+	display: grid
+	grid-template-columns: 20% 60% 20%
+	grid-template-rows: 100px max-content
+	margin-bottom: 300px
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 1)
+
+	.header
+		grid-column: 1 / span 3
+		position: sticky
+		top: 0
+		background-color: white
+		z-index: 2
+
+	.side-nav
+		grid-area: 2 / 1 / span 1 / span 1
+		position: sticky
+		top: 100px
+		height: calc(100vh - 100px)
+		overflow-y: auto
+
+	.content
+		grid-area: 2 / 2 / span 1 / span 1
+
+	.ad-bar
+		grid-area: 2 / 3 / span 1 / span 1
+
+	.footer
+		height: 300px
+		width: 100%
+		position: fixed
+		bottom: 0
+		background-color: aqua
+		z-index: -1
+		line-height: 300px
+		text-align: center
+
+	> *
+		border: 1px solid black
+		padding: 20px
+
+	*
+		text-align: center
+
+.header
+	.nav-bar
+		display: grid
+		grid-auto-flow: column
+		grid-auto-columns: min-content
+		justify-content: end
+
+		.nav-items
+			width: 80px
+			height: 40px
+			line-height: 40px
+			border: 1px solid black
+
+@media (max-width: 600px)
+	.main-content
+		grid-template-rows: auto max-content
+	
+	.header 
+		.nav-bar
+			grid-auto-flow: row
+
+			.nav-items
+				width: 100vw
+				background-color: gray
+

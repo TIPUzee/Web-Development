@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: wheat;
+}
+
+.card {
+  padding: 50px 70px;
+  margin-inline: auto;
+  min-width: 800px;
+  max-width: 95%;
+  width: 1250px;
+  margin-block: 70px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.card .caption {
+  margin-bottom: 20px;
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.users-table caption {
+  background-color: green;
+}
+
+.users-table img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.users-table tr:nth-child(1) td:first-child {
+  padding: 0 5px 10px;
+}
+
+.users-table tr:nth-child(1) td:not(:first-child) {
+  padding: 7px 20px;
+}
+
+.users-table tr:not(:nth-child(1)) {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-box-shadow 0.05s ease-out;
+  transition: -webkit-box-shadow 0.05s ease-out;
+  transition: box-shadow 0.05s ease-out;
+  transition: box-shadow 0.05s ease-out, -webkit-box-shadow 0.05s ease-out;
+}
+
+.users-table tr:not(:nth-child(1)) td {
+  padding: 7px 20px;
+}
+
+.users-table tr:not(:nth-child(1)):hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.users-table tr:not(:nth-child(1)) email {
+  font-size: 70%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.users-table tr:not(:nth-child(1)) .status:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lime;
+  position: relative;
+  top: 40%;
+  left: -10px;
+}
+
+.users-table tr:not(:nth-child(1)) td:last-child {
+  position: relative;
+}
+
+.users-table tr:not(:nth-child(1)) td:last-child .fa-ellipsis-vertical {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+  font-size: 1.3rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0);
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+
+.users-table tr:not(:nth-child(1)) td:last-child .fa-ellipsis-vertical:hover {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+.users-table button {
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0 0 3px black, inset 0 5px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 3px black, inset 0 5px 5px rgba(0, 0, 0, 0);
+  background-color: #0eb6f8;
+  color: white;
+  font-size: 110%;
+  -webkit-transition: -webkit-box-shadow 0.1s;
+  transition: -webkit-box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s, -webkit-box-shadow 0.1s;
+}
+
+.users-table button:hover {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 5px 5px black;
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 5px 5px black;
+}

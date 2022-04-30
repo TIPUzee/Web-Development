@@ -1,0 +1,139 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	background-color: wheat
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+
+.offer-container
+	display: flex
+	justify-content: center
+	padding: 5rem 3rem
+	flex-wrap: wrap
+
+	.card
+		width: 20rem
+		border: none
+		border-radius: 20px
+		margin: 5rem 0.5rem
+		position: relative
+		padding-block: 8rem 2rem
+
+		.price-ball
+			outline: 5px solid white
+			border-radius: 50%
+			width: 10rem
+			height: 10rem
+			position: absolute
+			top: -5rem
+			left: 50%
+			transform: translateX(-50%)
+			line-height: 10rem
+			text-align: center
+			font-size: 2rem
+			color: white
+
+			.duration-ball
+				font-size: 0.7em
+				line-height: 2em
+
+				background-color: white
+				border-radius: 50%
+				border: 3px solid
+
+				height: 2.5em
+				width: 2.5em
+				position: absolute
+				top: -0.3rem
+				right: -0.3rem
+
+		.title
+			background-color: rgba(0, 0, 0, 0.3)
+			height: 3.5rem
+			line-height: 3.5rem
+			text-align: center
+			font-size: 1.7rem
+			color: white
+
+		table
+			width: 100%
+			border-collapse: collapse
+
+			tr:nth-child(odd)
+				background-color: white
+
+			tr:nth-child(even)
+				background-color: rgb(224, 223, 223)
+
+			td
+				padding: 0.7rem 1rem
+
+			td:last-child
+				text-align: right
+
+		button
+			display: block
+			bottom: 0rem
+			padding: 1rem 1.4rem
+			border-radius: 7px
+			border: none
+			margin-inline: auto
+			margin-top: 2rem
+			color: white
+			transition: box-shadow 0.2s ease-out
+
+			&:hover
+				box-shadow: inset 0 7px 10px black
+
+			&:active
+				box-shadow: inset 0 7px 10px black
+
+	.card-1
+		background-color: #3385e2
+
+		.price-ball
+			background-color: #3385e2
+
+			.duration-ball
+				color: #3385e2
+
+		button
+			background-color: #00499c
+
+	.card-2
+		background-color: #33e242
+
+		.price-ball
+			background-color: #33e242
+			
+			.duration-ball
+				color: #33e242
+
+		button
+			background-color: #14741c
+
+	.card-3
+		background-color: #f8ee5e
+
+		.price-ball
+			background-color: #f8ee5e
+			
+			.duration-ball
+				color: #f8ee5e
+
+		button
+			background-color: #888014
+
+	.card-4
+		background-color: #d333e2
+
+		.price-ball
+			background-color: #d333e2
+			
+			.duration-ball
+				color: #d333e2
+
+		button
+			background-color: #8f1f99

@@ -1,0 +1,106 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	overflow-x: hidden
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+	background-color: wheat
+
+.card
+	padding: 50px 70px
+	margin-inline: auto
+	min-width: 800px
+	max-width: 95%
+	width: 1250px
+	margin-block: 70px
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4)
+	border-radius: 10px
+	background-color: white
+
+	.caption
+		margin-bottom: 20px
+		font-size: 150%
+		font-weight: 600
+
+.users-table
+	width: 100%
+	border-collapse: separate
+	border-spacing: 0 10px
+
+	caption
+		background-color: green
+
+	img
+		width: 30px
+		border-radius: 50%
+
+	tr:nth-child(1)
+		td:first-child
+			padding: 0 5px 10px
+
+		td:not(:first-child)
+			padding: 7px 20px
+
+	tr:not(:nth-child(1))
+		border-radius: 5px
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.4)
+		transition: box-shadow 0.05s ease-out
+
+		td
+			padding: 7px 20px
+
+		&:hover
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.9)
+
+		email
+			font-size: 70%
+			color: rgba(0, 0, 0, 0.5)
+
+		.status
+
+			&:before
+				content: ''
+				display: inline-block
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				background-color: rgba(0, 255, 0, 1)
+				position: relative
+				top: 40%
+				left: -10px
+
+		td:last-child
+			position: relative
+
+			.fa-ellipsis-vertical
+				display: block
+				position: absolute
+				width: 30px
+				height: 40px
+				line-height: 40px
+				text-align: center
+				top: 50%
+				left: 50%
+				transform: translate(-100%, -50%)
+				font-size: 1.3rem
+				border-radius: 5px
+				box-shadow: 0 0 3px rgba(0, 0, 0, 0)
+				transition: box-shadow 0.2s ease
+
+				&:hover
+					box-shadow: 0 0 3px rgba(0, 0, 0, 0.8)
+
+	button
+		padding: 6px 15px
+		border-radius: 5px
+		border: none
+		box-shadow: 0 0 3px rgba(0, 0, 0, 1), inset 0 5px 5px rgba(0, 0, 0, 0)
+		background-color: rgb(14, 182, 248)
+		color: white
+		font-size: 110%
+		transition: box-shadow 0.1s
+
+		&:hover
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 5px 5px rgba(0, 0, 0, 1)
