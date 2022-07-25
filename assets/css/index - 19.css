@@ -1,0 +1,24 @@
+.carousel-wrapper {
+	padding-top: 80px !important;
+}
+
+.carousel-frame {
+	max-width: 900px;
+}
+
+.carousel-slide {
+	height: 500px;
+}
+
+.carousel-slide img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+#main-carousel-1 {
+	--o-carousel-indicator-switch-time-duration: 0.1s;
+	--o-carousel-indicator-gap: 10px;
+	--o-carousel-indicator-size: 20px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculate GPA</title>
+	<link rel="stylesheet" href="assets/css/style - 22.css">
+</head>
+<body>
+	
+
+	<div class="container">
+		<div class="row inputs">
+			<div class="input-control">
+				<label for="course">Course</label>
+				<input class="input-field" type="text" id="course">
+			</div>
+			<div class="input-control">
+				<label for="credit">Credit Hours</label>
+				<select class="input-field" id="credit" onchange="updateMarksInputField();">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3" selected>3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="input-control">
+				<label for="marks">Marks</label>
+				<select class="input-field" id="marks"></select>
+			</div>
+		</div>
+		<div class="row inputs">
+			<button id="submit" onclick="submitDetails();"><span>ADD</span></button>
+		</div>
+
+		<div class="row table">
+			<table id="resultsTable" class="table">
+				<thead>
+					<th>Course</th>
+					<th>Credit Hours</th>
+					<th>Marks</th>
+					<th>Quality Points</th>
+					<th>Grade</th>
+					<th>Delete</th>
+				</thead>
+				<tbody>
+					<tr id="tr1">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td onclick="deleteRow('tr1');"><i class="fa-solid fa-trash"></i></td>
+					</tr>
+					<tr id="tr2">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td onclick="deleteRow('tr2');"><i class="fa-solid fa-trash"></i></td>
+					</tr>
+					<tr id="tr3">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td onclick="deleteRow('tr3');"><i class="fa-solid fa-trash"></i></td>
+					</tr>
+					<tr id="tr4">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td onclick="deleteRow('tr4');"><i class="fa-solid fa-trash"></i></td>
+					</tr>
+					<tr id="tr5">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td onclick="deleteRow('tr5');"><i class="fa-solid fa-trash"></i></td>
+					</tr>
+					<tr id="tr6">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td onclick="deleteRow('tr6');"><i class="fa-solid fa-trash"></i></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="6" id="result">Results</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+	
+	
+	<script src="assets/js/index-22.js"></script>
+	<script src="https://kit.fontawesome.com/04a7661618.js" crossorigin="anonymous"></script>
+</body>
+</html>

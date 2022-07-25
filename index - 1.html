@@ -1,69 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/style1.css">
-	<title>Fullscreen Landing</title>
+	<title>Document</title>
 </head>
-
-</html>
-
-
 <body>
-
-	<div class="section1">
-		<hr id="upperSaparator">
-		<h1>Welcome To The Beach</h1>
-		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, perferendis laudantium fugiat harum
-			veniam quae!
-		</p>
-		<button onclick="alert ('Hello')">Read More</button>
-	</div>
-	<div class="section2">
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere magnam nihil nobis, eaque illum
-			placeat quibusdam optio, eveniet ut quis. Amet et dolore libero est dolorum nesciunt consequuntur itaque?
-			Temporibus iure consequuntur explicabo, eum eos illo provident consequatur ipsam dicta, quisquam nobis
-			voluptatum fugit officiis recusandae minima? Impedit laborum exercitationem corporis itaque, non nobis
-			reprehenderit nam possimus inventore voluptates enim placeat dolorem sequi a labore facere saepe commodi
-			repudiandae accusantium modi fuga, delectus cupiditate quod? Similique saepe itaque accusantium magni rem
-			aut sit inventore aliquam suscipit doloremque vel ad mollitia fugiat optio, veniam dolorum voluptates
-			repellat officia natus obcaecati.
-		</p>
-	</div>
-	<div class="section3">
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere magnam nihil nobis, eaque illum
-			placeat quibusdam optio, eveniet ut quis. Amet et dolore libero est dolorum nesciunt consequuntur itaque?
-			Temporibus iure consequuntur explicabo, eum eos illo provident consequatur ipsam dicta, quisquam nobis
-			voluptatum fugit officiis recusandae minima? Impedit laborum exercitationem corporis itaque, non nobis
-			reprehenderit nam possimus inventore voluptates enim placeat dolorem sequi a labore facere saepe commodi
-			repudiandae accusantium modi fuga, delectus cupiditate quod? Similique saepe itaque accusantium magni rem
-			aut sit inventore aliquam suscipit doloremque vel ad mollitia fugiat optio, veniam dolorum voluptates
-			repellat officia natus obcaecati.
-		</p>
-	</div>
-	<div class="section4">
-		<div class="part1">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ducimus nobis sapiente nemo, voluptatum dignissimos distinctio saepe consequatur ab animi autem, reiciendis, repellat ipsa placeat aperiam dolor iure? Ea, beatae.
-			</p>
-			</div>
-		<div class="part2">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ducimus nobis sapiente nemo, voluptatum dignissimos distinctio saepe consequatur ab animi autem, reiciendis, repellat ipsa placeat aperiam dolor iure? Ea, beatae.
-			</p>
-			</div>
-		<div class="part3">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ducimus nobis sapiente nemo, voluptatum dignissimos distinctio saepe consequatur ab animi autem, reiciendis, repellat ipsa placeat aperiam dolor iure? Ea, beatae.
-			</p>
-		</div>
+	
+	<div id="wrapper">
+		<input type="text" id="txt">
+		<input type="text" id="txt1">
+		<h1 id="message"></h1>
 	</div>
 
+	<button id="submit-btn" onclick="Check();">Submit Now</button>
+	
+	<script>
+		var a = document.getElementById('txt'); // getting the Element 
+		var b = document.getElementById('txt1'); // getting the Element 
+		const namesArray = ['first', 'second'];
+		
+		console.log(a);
+		
+		function Check()
+		{
+			let i = 0; // every time, i should start from 0, must
+			if (a.value == namesArray[i]) // get a's value and compare it with what you want
+			{
+				document.getElementById('wrapper').style.background = 'green';
+				document.getElementById('message').innerHTML = 'Access Granted!';
+			}
+			else 
+			{
+				console.log('first condition - False');
+			}
+
+			i++; // increment
+			if (b.value == namesArray[i]) // now get b's value and compare it ... 
+			{
+				console.log('second condition - True');
+			}
+			else 
+			{
+				console.log('second condition - False');
+			}
+		}
+	</script>
 </body>
-
 </html>

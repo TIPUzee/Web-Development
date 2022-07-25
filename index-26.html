@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.error {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	
+	<form id="myForm" action="" onsubmit="return validate()">
+
+		<div id="name">
+			<label>Name</label> <br>
+			<input type="text"> <br>
+			<div class="error"></div> <br> <br>
+		</div>
+
+		<div id="email">
+			<label>Email</label> <br>
+			<input type="email"> <br>
+			<div class="error"></div> <br> <br>
+		</div>
+
+		<div id="address">
+			<label>Address</label> <br>
+			<input type="text"> <br>
+			<div class="error"></div> <br> <br>
+		</div>
+
+		<div id="password">
+			<label>Password</label> <br>
+			<input type="password"> <br>
+			<div class="error"></div> <br> <br>
+		</div>
+
+		<div id="submit">
+			<input type="submit" value="Submit Now">
+		</div>
+
+	</form>
+	
+
+	<script>
+		let nameInput = document.querySelector('#name input');
+		let emailInput = document.querySelector('#email input');
+		let addressInput = document.querySelector('#address input');
+		let passwordInput = document.querySelector('#password input');
+
+		let nameError = document.querySelector('#name .error');
+		let emailError = document.querySelector('#email .error');
+		let addressError = document.querySelector('#address .error');
+		let passwordError = document.querySelector('#password .error');
+		
+		function refreshErrors() 
+		{
+			nameError.innerHTML = "";
+			emailError.innerHTML = "";
+			addressError.innerHTML = "";
+			passwordError.innerHTML = "";
+		}
+		
+		function validate() 
+		{
+			refreshErrors();
+			
+			// name validation
+			let nameValue = nameInput.value;
+			if (nameValue.length < 3)
+			{
+				nameError.innerHTML = "Name cannot be less than 3 characters!";
+				return false;
+			}
+			if (nameValue.length > 20)
+			{
+				nameError.innerHTML = "Name cannot be greater than 20 characters!";
+				return false;
+			}
+
+			// email validation
+			let emailValue = emailInput.value;
+
+			return false;
+		}
+	</script>
+</body>
+</html>

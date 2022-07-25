@@ -1,0 +1,211 @@
+:root {
+	--round: 5px;
+	--bg-dark: rgba(89, 81, 81, 0.711);
+	--bg-light-dark: rgb(45, 45, 45);
+	--theme-color: #e67e22;
+}
+*, 
+*::before, 
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 100vh;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	background: transparent url(../image/windows-11-blue-blured.png) no-repeat top / cover fixed;
+	height: 100%;
+}
+.main {
+	min-height: 300vh;
+	color: white;
+
+	display: flex;
+	flex-direction: row;
+}
+.main > * {
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: var(--bg-dark);
+}
+#sideNav {
+	min-height: 100vh;
+	width: 310px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	padding-top: 15px;
+}
+#contentContainer {
+	min-height: 100vh;
+	flex-grow: 1;
+}
+#sideNav .profile {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	user-select: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: -10px;
+	padding-left: 10px;
+	column-gap: 15px;
+	border-radius: var(--round);
+	-webkit-border-radius: var(--round);
+	-moz-border-radius: var(--round);
+	-ms-border-radius: var(--round);
+	-o-border-radius: var(--round);
+}
+#sideNav .profile .img {
+	height: 60px;
+	width: 60px;
+	background: white url(../image/windows-11-user-profile.png) no-repeat center center / cover;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+#sideNav .profile .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	column-gap: 0x;
+}
+#sideNav .profile .content .title {
+	font-size: 16px;
+	font-weight: 600;
+}
+#sideNav .profile .content .subTitle {
+	font-size: 12px;
+}
+#sideNav #search {
+	height: 33px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: var(--round);
+	-webkit-border-radius: var(--round);
+	-moz-border-radius: var(--round);
+	-ms-border-radius: var(--round);
+	-o-border-radius: var(--round);
+	background-color: var(--bg-light-dark);
+	border-bottom: 1px solid white;
+	cursor: text;
+} 
+#sideNav #search:focus-within {
+	border-color: var(--theme-color);
+}
+#sideNav #search:hover {
+}
+#sideNav #searchBox::placeholder {
+	user-select: none;
+} 
+#sideNav #searchBox {
+	padding-left: 10px;
+	padding-right: 40px;
+	background: none !important;
+	border: none;
+	outline: none;
+	color: white;
+}
+#sideNav #menusList {
+	display: flex;
+	flex-direction: column;
+	row-gap: 4px;
+	list-style: none;
+	padding: 0;
+	user-select: none;
+}
+#sideNav #menusList li {
+	background-color: rgba(255, 255, 255, 0.0);
+	border-radius: var(--round);
+	-webkit-border-radius: var(--round);
+	-moz-border-radius: var(--round);
+	-ms-border-radius: var(--round);
+	-o-border-radius: var(--round);
+	display: flex;
+	align-items: center;
+	padding-left: 50px;
+	height: 35px;
+	font-size: 14px;
+	position: relative;
+}
+#sideNav #menusList li:hover, 
+#sideNav #menusList li.active, 
+#sideNav .profile:hover {
+	background-color: rgba(255, 255, 255, 0.098);
+}
+#sideNav #menusList li.active::before {
+	background-color: var(--theme-color);
+}
+#sideNav #menusList li.active:hover {
+	background-color: rgba(255, 255, 255, 0.074);
+}
+#sideNav #menusList li::before {
+	content: '';
+	background-color: rgba(255, 255, 255, 0);
+	width: 3.5px;
+	height: 15px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	position: absolute;
+	left: 0;
+}
+#sideNav #menusList .icon {
+	width: 20px;
+	object-fit: contain;
+}
+#sideNav #menusList li#system p {
+}
+#sideNav #menusList li p::before {
+	content: '';
+	background: transparent no-repeat center center / contain;
+	position: absolute;
+	width: 28px;
+	height: 22px;
+	left: 12px;
+}
+#sideNav #menusList li#system p::before {
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 900;
+	content: '\e163';
+}
+#sideNav #menusList li#bluetooth p::before {
+	background-image: url(../image/android\ bluetooth\ -\ edited.png);
+}
+#sideNav #menusList li#network p::before {
+	background-image: url(../image/wifi.png);
+}
+#sideNav #menusList li#personalization p::before {
+	background-image: url(../image/brush.png);
+}
+#sideNav #menusList li#apps p::before {
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- */
+/* ----------------------- */
+/* Content Container */
+/* ----------------------- */
+/* ----------------------- */
+#contentContainer {
+	padding-top: 60px;
+	color: ;
+}

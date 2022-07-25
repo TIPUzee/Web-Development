@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<input  id="screen" type="text" />
+
+	<div class="buttons">
+		<button onclick="getInput('1')">1</button>
+		<button onclick="getInput('2')">2</button>
+		<button onclick="getInput('3')">3</button><br>
+		<button onclick="getInput('4')">4</button>
+		<button onclick="getInput('5')">5</button>
+		<button onclick="getInput('6')">6</button><br>
+		<button onclick="getInput('7')">7</button>
+		<button onclick="getInput('8')">8</button>
+		<button onclick="getInput('9')">9</button><br>
+		<button onclick="getInput('0')">0</button>
+
+		<button onclick="getInput('+')">+</button>
+		<button onclick="getInput('-')">-</button><br>
+		<button onclick="getInput('*')">*</button>
+		<button onclick="getInput('/')">/</button>
+		
+		<button onclick="getOperator('=')">=</button><br>
+		<button onclick="backspace()">C</button>
+	</div>
+
+	<script>
+		let s = document.getElementById('screen');
+
+		function getInput(value)
+		{
+			s.value += value;
+		}
+		function getOperator()
+		{
+			s.value = eval(s.value);
+		}
+		function backspace(){
+			s.value = s.value.slice(0, s.value.length - 1);
+		}  
+	</script>
+</body>
+</html>

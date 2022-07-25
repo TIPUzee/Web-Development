@@ -7,43 +7,63 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/own - framework.css">
+	<link rel="stylesheet" href="assets/css/index - 19.css">
 </head>
 <body>
 	
-	<div class="main">
-		<div class="flexbox">
-			<div class="items item1">
-				<h1>1</h1>
+
+	<div id="main-carousel-1" class="carousel-wrapper o-bg-dark">
+		<div class="carousel-frame">
+			<div class="carousel-slide-wrapper">
+				<div data-o-belong-to-carousel="#main-carousel-1" class="carousel-slide o-bg-success">
+					<img src="assets/image/working team (1).jpg" alt="">
+				</div>
+				<div data-o-belong-to-carousel="#main-carousel-1" class="carousel-slide o-bg-primary">
+					<img src="assets/image/working team (2).jpg" alt="">
+				</div>
+				<div data-o-belong-to-carousel="#main-carousel-1" class="carousel-slide o-bg-alert">
+					<img src="assets/image/working team (3).jpg" alt="">
+				</div>
+				<div data-o-belong-to-carousel="#main-carousel-1" class="carousel-slide o-bg-warning">
+					<img src="assets/image/working team (4).jpg" alt="">
+				</div>
 			</div>
-			<div class="items item2">
-				<h1>2</h1>
-			</div>
-			<div class="items item3">
-				<h1>3</h1>
-			</div>
-			<div class="items item4">
-				<h1>4</h1>
-			</div>
-			<div class="items item5">
-				<h1>5</h1>
-			</div>
-			<div class="items item6">
-				<h1>6</h1>
-			</div>
-			<div class="items item7">
-				<h1>7</h1>
-			</div>
-			<div class="items item8">
-				<h1>8</h1>
-			</div>
-			<div class="items item9">
-				<h1>9</h1>
-			</div>
-			<div class="items item10">
-				<h1>10</h1>
-			</div>
+		</div>
+		<div class="carousel-indicators-wrapper">
+			<a onclick="move_slide(this);" data-o-belong-to-carousel="#main-carousel-1" data-o-indicator-for-slide="0" class="carousel-indicator-item active"></a>
+			<a onclick="move_slide(this);" data-o-belong-to-carousel="#main-carousel-1" data-o-indicator-for-slide="1" class="carousel-indicator-item"></a>
+			<a onclick="move_slide(this);" data-o-belong-to-carousel="#main-carousel-1" data-o-indicator-for-slide="2" class="carousel-indicator-item"></a>
+			<a onclick="move_slide(this);" data-o-belong-to-carousel="#main-carousel-1" data-o-indicator-for-slide="3" class="carousel-indicator-item"></a>
 		</div>
 	</div>
 	
+	<div id="main-carousel-2" class="carousel-wrapper o-bg-dark">
+		<div class="carousel-frame">
+			<div class="carousel-slide-wrapper">
+				<div data-o-belong-to-carousel="#main-carousel-2" class="carousel-slide o-bg-success">
+					<img src="assets/image/working team (1).jpg" alt="">
+				</div>
+				<div data-o-belong-to-carousel="#main-carousel-2" class="carousel-slide o-bg-primary">
+					<img src="assets/image/working team (2).jpg" alt="">
+				</div>
+				<div data-o-belong-to-carousel="#main-carousel-2" class="carousel-slide o-bg-alert">
+					<img src="assets/image/working team (3).jpg" alt="">
+				</div>
+				<div data-o-belong-to-carousel="#main-carousel-2" class="carousel-slide o-bg-warning">
+					<img src="assets/image/working team (4).jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="carousel-indicators-wrapper">
+			<a onclick="move_slide(this);" data-o-belong-to-carousel="#main-carousel-2" data-o-indicator-for-slide="0" class="carousel-indicator-item active"></a>
+			<a onclick="move_slide(this);" data-o-belong-to-carousel="#main-carousel-2" data-o-indicator-for-slide="1" class="carousel-indicator-item"></a>
+			<a onclick="move_slide(this);" data-o-belong-to-carousel="#main-carousel-2" data-o-indicator-for-slide="2" class="carousel-indicator-item"></a>
+			<a onclick="move_slide(this);" data-o-belong-to-carousel="#main-carousel-2" data-o-indicator-for-slide="3" class="carousel-indicator-item"></a>
+		</div>
+	</div>
+	
+	
+	<script src="assets/js/index - 19.js"></script>
 </body>
 </html>

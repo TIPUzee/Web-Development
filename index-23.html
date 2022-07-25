@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/index-23.css">
+</head>
+<body>
+	
+	<div class="slider">
+		<img class="active" src="assets/image/programming (1).jpg">
+		<img class="inactive" src="assets/image/programming (2).jpg">
+		<img class="inactive" src="assets/image/programming (3).jpg">
+
+		<button class="right" onclick="moveSlide(+1);">Next</button>
+		<button class="left" onclick="moveSlide(-1);">Next</button>
+	</div>
+	
+
+	<script>
+		var sliderImages = document.querySelectorAll('.slider img');
+	let currSlide = 0;
+
+	function moveSlide(sign) 
+	{
+		sliderImages[currSlide].classList.remove('active');
+		sliderImages[currSlide].classList.add('inactive');
+		currSlide = (currSlide + sign) % 3;
+		if (currSlide == -1) { currSlide = 2; }
+		sliderImages[currSlide].classList.remove('inactive');
+		sliderImages[currSlide].classList.add('active');
+	}
+
+	</script>
+</body>
+</html>

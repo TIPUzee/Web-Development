@@ -10,7 +10,15 @@ index - 14: Glass box
 index - 15: tooltip
 index - 17: Uni: Assignment: Offers Pricing Cards
 index - 18: Uni: Assignment: Users Info Table
-index - 19: students ---
+index - 19: first carousel slider
 index - 20: Uni: Assignment: Users Info Table 2
 index - 21: layout using grid - 1
+index - 22: gpa calculator
+index - 23: slider - opacity
+index - 25: slider - source
+index - 26: form validation
+index - 27: Windows 11 UI
+index - 28: Nayab web template
+index - 29: Web Practice
+index - 30: calculator
 

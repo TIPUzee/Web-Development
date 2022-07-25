@@ -1,0 +1,120 @@
+:root {
+	--o-p-carousel-wrapper: 20px;
+	--o-carousel-direction: row;
+	--o-carousel-indicator-size: 15px;
+	--o-carousel-indicator-color: rgb(255, 255, 255);
+	--o-carousel-indicator-gap: 5px;
+	--o-py-carousel-indicators-wrapper: 15px;
+	--o-carousel-slide-time-duration: 1s;
+	--o-carousel-slide-timing-function: ease;
+	--o-carousel-indicator-switch-time-duration: 1s;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+*, 
+::after, 
+::before {
+	padding: 0 !important;
+	margin: 0 !important;
+	box-sizing: border-box !important;
+}
+
+.carousel-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: var(--o-p-carousel-wrapper) !important;
+}
+
+.carousel-frame {
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-slide-wrapper {
+	display: flex;
+	flex-direction: var(--o-carousel-direction);
+	flex-wrap: nowrap;
+	position: relative;
+	left: 0;
+	transition: left var(--o-carousel-slide-time-duration) var(--o-carousel-slide-timing-function);
+	-webkit-transition: left var(--o-carousel-slide-time-duration) var(--o-carousel-slide-timing-function);
+	-moz-transition: left var(--o-carousel-slide-time-duration) var(--o-carousel-slide-timing-function);
+	-ms-transition: left var(--o-carousel-slide-time-duration) var(--o-carousel-slide-timing-function);
+	-o-transition: left var(--o-carousel-slide-time-duration) var(--o-carousel-slide-timing-function);
+}
+
+.carousel-slide {
+	width: 100%;
+	flex: 0 0 auto;
+}
+
+.carousel-indicators-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--o-carousel-indicator-gap);
+	width: 100%;
+	padding-block: var(--o-py-carousel-indicators-wrapper) !important;
+}
+
+.carousel-indicator-item {
+	width: var(--o-carousel-indicator-size);
+	height: var(--o-carousel-indicator-size);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	background-color: var(--o-carousel-indicator-color);
+	opacity: 0.3;
+	transition: opacity var(--o-carousel-indicator-switch-time-duration) ease;
+	-webkit-transition: opacity var(--o-carousel-indicator-switch-time-duration) ease;
+	-moz-transition: opacity var(--o-carousel-indicator-switch-time-duration) ease;
+	-ms-transition: opacity var(--o-carousel-indicator-switch-time-duration) ease;
+	-o-transition: opacity var(--o-carousel-indicator-switch-time-duration) ease;
+	cursor: pointer;
+}
+
+.carousel-indicator-item.active {
+	opacity: 1;
+}
+
+.o-bg-primary {
+	background-color: rgb(23, 23, 70);
+}
+
+.o-bg-secondary {
+	background-color: rgb(52, 48, 48);
+}
+
+.o-bg-dark {
+	background-color: rgb(32, 29, 29);
+}
+
+.o-bg-success {
+	background-color: rgb(30, 93, 29);
+}
+
+.o-bg-info {
+	background-color: rgb(51, 14, 78);
+}
+
+.o-bg-alert {
+	background-color: rgb(168, 158, 52);
+}
+
+.o-bg-warning {
+	background-color: rgb(107, 35, 35);
+}
