@@ -47,6 +47,10 @@ body {
   overflow-y: auto;
 }
 
+.upper-header {
+  height: 30px;
+}
+
 .main-content .content {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;

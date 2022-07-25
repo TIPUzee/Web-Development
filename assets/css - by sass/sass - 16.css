@@ -1,0 +1,1 @@
+*{margin:0;padding:0;-webkit-box-sizing:content-box;box-sizing:content-box}html{overflow-x:hidden}.page{height:200rem;display:-ms-grid;display:grid;-ms-grid-columns:(1fr)[5];grid-template-columns:repeat(5, 1fr)}.page *:not(h1){border:1px solid black}
